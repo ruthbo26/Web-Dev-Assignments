@@ -3,8 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Rhaenyra Targaryen</title>
-    <link rel="stylesheet" href="style.css" />
 </head>
+<style>
+    h1, h3  {
+    color: darkslategray;
+}
+h3{
+    background-color: aliceblue;
+    display: block;
+}
+img{
+    border: 5px solid darkslategray ;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+
+.experience {
+      display: grid;
+      color: whitesmoke;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr ;
+      gap: 10px
+    
+    }
+
+.experience>* {
+      background-color: cadetblue;
+    }
+
+.edu {
+        display: grid;
+        color: whitesmoke;
+        background-color: cadetblue;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+    }
+.skills{
+    display: grid;
+    color: whitesmoke;
+    background-color: cadetblue;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+}
+@media (min-width: 200px)
+{
+    a{
+        background-color: cadetblue;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 280px;
+    }
+    
+}
+</style>
 <body>
     <h1>
         Rhaenyra Targaryen
@@ -14,6 +70,7 @@
         Experience
     </h3>
     <p>
+        <div class="experience">
         <ul>
             </ol>
              <li>
@@ -49,17 +106,20 @@
             <br/>
            
         </ul>
+    </div>
     </p>
 
     <h3>
         Education
     </h3>
     <p>
+        <div class="edu">
         <ul>
             <li>
                 Private Education for Targaryen Royalty
             </li>
         </ul>
+        </div>
 
     </p>
 
@@ -67,6 +127,7 @@
         Skills
     </h3>
     <p>
+        <div class="skills">
         <ul>
             <li>
                 Excellent dragon riding 
@@ -81,6 +142,7 @@
                 Expert in forging weapons 
             </li>
         </ul>
+    </div>
     </p>
     <h3>
         Other
